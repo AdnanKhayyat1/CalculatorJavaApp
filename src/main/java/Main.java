@@ -13,7 +13,7 @@ public class Main {
             String[] cmds = input.split("\\W+");
             int leftOp = Integer.parseInt(cmds[1]);
             if(cmds[0].contains("fibonacci") || cmds[0].contains("binary")){
-                if(cmds[0] == "fibonacci"){
+                if(cmds[0].contains("fibonacci")){
                     System.out.println(calc.fibonacciNumberFinder(leftOp));
                 }
                 else if(cmds[0].contains("binary")){
