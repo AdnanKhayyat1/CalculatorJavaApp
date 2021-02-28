@@ -15,14 +15,18 @@ public class Main {
                 System.out.println(i + ": " + cmds[i] + ".");
             }
             int leftOp = Integer.parseInt(cmds[1]);
-            if(cmds[0] == "fibonacciNumberFinder"){
-                System.out.println(calc.fibonacciNumberFinder(leftOp));
-            }
-            
-            else if(cmds[0] == "intToBinaryNumber"){
-                System.out.println("converting int to binary...");
-                System.out.println(calc.intToBinaryNumber(leftOp));
-            } else {
+            if(cmds[0] == "fibonacciNumberFinder" || cmds[0] == "intToBinaryNumber"){
+                System.out.println("one operand ops");
+                if(cmds[0] == "fibonacciNumberFinder"){
+                    System.out.println(calc.fibonacciNumberFinder(leftOp));
+                }
+                
+                else if(cmds[0] == "intToBinaryNumber"){
+                    System.out.println("converting int to binary...");
+                    System.out.println(calc.intToBinaryNumber(leftOp));
+                } 
+            }else {
+                System.out.println("two operand ops");
                 int result = -1;
                 int rightOp = Integer.parseInt(cmds[2]);
                 if(cmds[0] == "add"){
