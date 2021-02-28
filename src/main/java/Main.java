@@ -13,7 +13,7 @@ public class Main {
             input = scanner.nextLine();
             String[] cmds = input.split("\\W+");
             for(int i = 0; i < cmds.length; i++){
-                System.out.println(i + ": " + cmds[i]);
+                System.out.println(i + ": " + cmds[i] + ".");
             }
             int leftOp = Integer.parseInt(cmds[1]);
             if(cmds[0] == "fibonacciNumberFinder"){
