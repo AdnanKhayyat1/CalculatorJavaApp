@@ -36,7 +36,7 @@ public class Main {
                 if(cmds[0].contains("divide")){
                     result = calc.divide(leftOp, rightOp);
                 }
-                System.out.println("Output: " + Integer.toString(result) + "\n");
+                System.out.println(Integer.toString(result));
             
             }
         }
