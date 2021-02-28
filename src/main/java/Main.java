@@ -12,11 +12,11 @@ public class Main {
             input = scanner.nextLine();
             String[] cmds = input.split("\\W+");
             int leftOp = Integer.parseInt(cmds[1]);
-            if(cmds[0].contains("fibonacciNumberFinder") || cmds[0].contains("intToBinaryNumber")){
-                if(cmds[0] == "fibonacciNumberFinder"){
+            if(cmds[0].contains("fibonacci") || cmds[0].contains("binary")){
+                if(cmds[0] == "fibonacci"){
                     System.out.println(calc.fibonacciNumberFinder(leftOp));
                 }
-                else if(cmds[0].contains("intToBinaryNumber")){
+                else if(cmds[0].contains("binary")){
                   
                     System.out.println(calc.intToBinaryNumber(leftOp));
                 } 
