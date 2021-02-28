@@ -28,7 +28,7 @@ public class Main {
                     result = calc.add(leftOp, rightOp);
                 }
                 if(cmds[0].contains("subtract")){
-                    result = calc.add(leftOp, rightOp);
+                    result = calc.subtract(leftOp, rightOp);
                 }
                 if(cmds[0].contains("multiply")){
                     result = calc.multiply(leftOp, rightOp);
