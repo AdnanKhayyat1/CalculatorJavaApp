@@ -1,4 +1,3 @@
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -11,6 +10,9 @@ public class Main {
         while(input != "done"){
             input = scanner.nextLine();
             String[] cmds = input.split("\\W+");
+            for(int i = 0; i < cmds.length; i++){
+                System.out.println(i + ": " + cmds[i]);
+            }
             int leftOp = Integer.parseInt(cmds[1]);
             if(cmds[0] == "fibonacciNumberFinder"){
                 System.out.println(calc.fibonacciNumberFinder(leftOp));
