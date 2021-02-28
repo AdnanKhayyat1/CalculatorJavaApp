@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException{
+        ;
+        ;
         Calculator calc = new Calculator();
         System.out.println("welcome to the calculator\nEnter a command:");
         Scanner scanner = new Scanner(System.in);
@@ -17,6 +19,7 @@ public class Main {
             if(cmds[0] == "fibonacciNumberFinder"){
                 System.out.println(calc.fibonacciNumberFinder(leftOp));
             }
+            
             else if(cmds[0] == "intToBinaryNumber"){
                 System.out.println(calc.intToBinaryNumber(leftOp));
             } else {
