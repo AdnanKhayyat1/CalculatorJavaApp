@@ -20,11 +20,13 @@ public class Main {
             }
             
             else if(cmds[0] == "intToBinaryNumber"){
+                System.out.println("converting int to binary...");
                 System.out.println(calc.intToBinaryNumber(leftOp));
             } else {
                 int result = -1;
                 int rightOp = Integer.parseInt(cmds[2]);
                 if(cmds[0] == "add"){
+                    System.out.println("adding...");
                     result = calc.add(leftOp, rightOp);
                 }
                 if(cmds[0] == "subtract"){
